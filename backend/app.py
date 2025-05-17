@@ -4,9 +4,16 @@ import random
 from datetime import datetime, timedelta, timezone
 import threading
 import time
-
+import os
 app = Flask(__name__)
-CORS(app)
+# Configure CORS
+CORS(
+    app,
+    resources={r"/api/*": {
+        "origins": os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000")
+    }}
+)
+
 
 # Updated City database with 50 Indian cities
 CITIES = {
