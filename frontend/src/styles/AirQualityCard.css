@@ -1,0 +1,90 @@
+.air-quality-card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.air-quality-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.aqi-icon {
+  font-size: 1.5rem;
+}
+
+.aqi-display {
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aqi-value {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.aqi-level {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pollutants-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pollutant {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.pollutant-name {
+  color: #555;
+  font-weight: 500;
+}
+
+.pollutant-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-footer {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.dominant-pollutant {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.updated {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  font-style: italic;
+}

@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --warning-color: #f39c12;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark-color);
+  background-color: #f5f7fa;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.refresh-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.refresh-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #2980b9;
+}
+
+.refresh-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.last-updated {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-top: 0.3rem;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.loading, .error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: var(--danger-color);
+  text-align: center;
+  border: 1px solid var(--danger-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.app-footer {
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Dashboard Grid Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .refresh-container {
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
+  
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-content {
+    padding: 1rem;
+  }
+}

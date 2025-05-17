@@ -1,0 +1,159 @@
+.recommendation-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 6px solid #4a90e2;
+}
+
+.recommendation-card h3 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.section h4 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section li {
+  margin-bottom: 8px;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.section li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Color Coding */
+.aq-good {
+  background-color: #e6f7ee;
+  border-left: 4px solid #2ecc71;
+}
+.aq-moderate {
+  background-color: #fff8e6;
+  border-left: 4px solid #f39c12;
+}
+.aq-unhealthy {
+  background-color: #ffebee;
+  border-left: 4px solid #e74c3c;
+}
+.aq-hazardous {
+  background-color: #fce4ec;
+  border-left: 4px solid #c2185b;
+}
+
+.weather-pleasant {
+  background-color: #e3f2fd;
+  border-left: 4px solid #3498db;
+}
+.weather-extreme {
+  background-color: #ffebee;
+  border-left: 4px solid #e74c3c;
+}
+
+.uv-low {
+  background-color: #e6f7ee;
+  border-left: 4px solid #2ecc71;
+}
+.uv-high {
+  background-color: #fff8e6;
+  border-left: 4px solid #f39c12;
+}
+.uv-extreme {
+  background-color: #ffebee;
+  border-left: 4px solid #e74c3c;
+}
+
+.travel-score {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.travel-good {
+  background-color: #e6f7ee;
+  color: #27ae60;
+}
+.travel-moderate {
+  background-color: #fff8e6;
+  color: #f39c12;
+}
+.travel-poor {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.concerns {
+  margin-top: 16px;
+}
+.concerns ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+.concerns li {
+  margin-bottom: 6px;
+  padding-left: 24px;
+  position: relative;
+  color: #e74c3c;
+  font-weight: 500;
+}
+.concerns li:before {
+  content: "⚠";
+  position: absolute;
+  left: 0;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.advice {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .recommendation-card {
+    padding: 16px;
+  }
+  .section {
+    padding: 12px;
+  }
+}
