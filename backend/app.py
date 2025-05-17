@@ -4,7 +4,7 @@ import random
 from datetime import datetime, timedelta, timezone
 import threading
 import time
-import os
+
 app = Flask(__name__)
 # Configure CORS
 CORS(app)
@@ -317,7 +317,6 @@ def get_recommendation():
     }
 
     return jsonify(recommendation)
-
 if __name__ == '__main__':
-    if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
