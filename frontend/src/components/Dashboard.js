@@ -7,7 +7,7 @@ import PollutionChart from './PollutionChart';
 import WeatherForecast from './WeatherForecast';
 import { fetchCities, fetchCityData, fetchCityRecommendation } from './api';
 import '../styles/Dashboard.css';
-
+axios.get('https://bhraman-backend.onrender.com/api/data')
 const Dashboard = () => {
   const [selectedCity, setSelectedCity] = useState('agra');
   const [data, setData] = useState(null);
