@@ -1,0 +1,50 @@
+# Node.js / React
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/build/
+frontend/.DS_Store
+frontend/.cache/
+frontend/coverage/
+
+# Python / Flask
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.python-version
+backend/.env
+backend/venv/
+backend/env/
+backend/ENV/
+backend/env.bak/
+backend/venv.bak/
+backend/*.sqlite3
+backend/instance/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Testing
+backend/.pytest_cache/
+frontend/coverage/
+
+# Production
+backend/static/  # If you're serving static files separately
