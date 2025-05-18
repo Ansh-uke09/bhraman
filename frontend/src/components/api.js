@@ -1,11 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL;
-
-export const fetchData = async () => {
-  const response = await fetch(`${API_URL}/api/data`);
-  return response.json();
-};
+// Use environment variable for production and local flexibility
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 export const fetchCities = async () => {
   try {
